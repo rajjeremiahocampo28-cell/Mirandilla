@@ -9,7 +9,7 @@ const PROJECTS = [
     desc: "aesthetic clothes for Men,Women, and Kids",
     tech: "React & JavaScript",
     img: project,
-    link: "https://github.com/rajjeremiahocampo28-cell/Case-Study.git",
+    link: "https://github.com/eduardmirandilla0820-alt/Portfolio.git",
   },
 ];
 
