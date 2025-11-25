@@ -1,0 +1,106 @@
+/* === About Page Styling === */
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  background: #0d0d0d; /* Dark background from Home page */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Wrapper */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* === Profile Image with Neon CIRCULAR Frame === */
+.image-box {
+  position: relative;
+  width: 350px; /* Width and Height are equal for a perfect circle */
+  height: 350px;
+  
+  /* --- CHANGED SECTION --- */
+  border-radius: 50%; /* Makes it a circle */
+  clip-path: none; /* Remove clip-path used for hexagon */
+  /* --- END CHANGED SECTION --- */
+  
+  background: #ffff33; /* Neon Yellow Border Color */
+  padding: 15px; /* Thicker padding/border */
+  box-shadow: 0 0 30px #ffff33, 0 0 60px rgba(255, 255, 51, 0.3); /* Neon glow */
+  transition: 0.3s ease;
+  overflow: hidden; /* Ensures the image inside is clipped */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  /* --- CHANGED SECTION --- */
+  border-radius: 50%; /* Apply border-radius to the image itself */
+  clip-path: none; /* Remove clip-path */
+  /* --- END CHANGED SECTION --- */
+}
+
+/* Glow effect (slightly modified to use the new colors) */
+.image-box:hover {
+  box-shadow: 0 0 40px #ff9900, 0 0 70px rgba(255, 153, 0, 0.5); /* Orange glow on hover */
+}
+
+/* Text Area */
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.about-text .highlight {
+  color: #ff9900; /* Bright Orange highlight */
+  font-weight: 700;
+  text-shadow: 0 0 5px #ff9900;
+}
+
+.about-text p {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #c7c7c7;
+}
+
+/* Button */
+.about-text button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  /* Neon Yellow to Orange Gradient for the button */
+  background: linear-gradient(
+    90deg,
+    #ffff33 0%, /* Neon Yellow */
+    #ff9900 100% /* Bright Orange */
+  );
+  border: none;
+  color: #0d0d0d; /* Dark text for contrast */
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(255, 153, 0, 0.5);
+}
+
+.about-text button:hover {
+  background: linear-gradient(
+    90deg,
+    #ff9900 0%,
+    #ffff33 100%
+  ); /* Reverse gradient on hover */
+  box-shadow: 0 0 15px #ff9900;
+}

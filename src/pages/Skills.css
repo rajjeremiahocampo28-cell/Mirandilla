@@ -1,0 +1,77 @@
+/* === Skills Page === */
+
+.page-skills {
+  padding: 120px 0;
+  background: #0d0d0d; /* Very Dark Background from Home page */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Title */
+.page-skills h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Skill Card */
+.skill-card {
+  background: #1e1e1e; /* Darker grey card background */
+  padding: 25px;
+  border-radius: 20px;
+  /* Orange/Yellow shadow for a subtle glow */
+  box-shadow: 0 8px 25px rgba(255, 153, 0, 0.15); 
+  border: 1px solid rgba(255, 153, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  /* Brighter glow on hover */
+  box-shadow: 0 10px 35px rgba(255, 153, 0, 0.3), 0 0 20px rgba(255, 255, 51, 0.15); 
+}
+
+/* Skill Header */
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skill-level {
+  font-size: 18px;
+  color: #ffff33; /* Neon Yellow for the percentage */
+}
+
+/* Progress Bar */
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #0d0d0d; /* Use the main background color for the empty bar */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  /* Neon Yellow to Orange Gradient */
+  background: linear-gradient(90deg, #ffff33, #ff9900); 
+  box-shadow: 0 0 12px rgba(255, 153, 0, 0.7); /* Orange glow on the bar fill */
+  border-radius: 10px;
+}

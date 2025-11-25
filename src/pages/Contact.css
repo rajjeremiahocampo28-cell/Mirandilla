@@ -1,0 +1,125 @@
+/* === CONTACT PAGE === */
+
+.page-contact {
+  padding: 120px 0;
+  background: #0d0d0d; /* Very Dark Background */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-contact .container {
+  max-width: 800px;
+  width: 90%;
+}
+
+/* Title */
+.page-contact h2 {
+  text-align: left;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.page-contact h2 .dot {
+  color: #ffff33;
+  text-shadow: 0 0 10px #ffff33;
+}
+
+/* Subtitle */
+.page-contact .project-info {
+  text-align: left;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 600px;
+  color: #d8d8d8;
+}
+
+/* === FORM === */
+
+.contact-form {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* Form Groups */
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffee; /* Brighter label */
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* Inputs and Textarea (FIXED) */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px 20px;
+
+  /* FIXED: Lighter background for visibility */
+  background: #3a3a3a;
+
+  color: #ffffff; /* Brighter text */
+  border: 1px solid #888; /* More visible border */
+
+  border-radius: 6px;
+  font-size: 17px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+/* Focus Glow */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff9900;
+  box-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+}
+
+.contact-form textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.btn-primary {
+  background: linear-gradient(90deg, #ffff33 0%, #ff9900 100%);
+  border: none;
+  padding: 18px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #0d0d0d;
+  margin-top: 30px;
+  width: 100%;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.01);
+  background: linear-gradient(90deg, #ff9900 0%, #ffff33 100%);
+  box-shadow: 0 0 30px rgba(255, 153, 0, 0.8);
+}
+
+.project-btn {
+  display: inline-block;
+  text-decoration: none;
+}

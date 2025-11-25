@@ -1,0 +1,132 @@
+/* ==== HOME SECTION MAIN LAYOUT ==== */
+.home-container {
+  background: #0d0d0d; /* Very Dark Background to make neon colors pop */
+  color: white;
+  min-height: 100vh;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* ==== LEFT SIDE TEXT ==== */
+.home-left h3 {
+  font-size: 22px;
+  opacity: 0.8;
+}
+
+.home-left h1 {
+  font-size: 55px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.home-left h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: #ffff33; /* Neon Yellow Highlight */
+  text-shadow: 0 0 10px #ffff33, 0 0 20px rgba(255, 255, 51, 0.5);
+}
+
+.home-left p {
+  max-width: 450px;
+  opacity: 0.9;
+  margin-bottom: 35px;
+}
+
+/* ==== SOCIAL ICONS ==== */
+.socials {
+  margin-bottom: 30px;
+}
+
+.socials a {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #ff9900; /* Bright Orange social icons */
+  text-shadow: 0 0 10px #ff9900;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.1) translateY(-3px);
+  color: #ffff33; /* Hover effect turns them Neon Yellow */
+}
+
+/* ==== BUTTONS ==== */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  /* Neon Yellow to Orange Gradient for Download CV */
+  background: linear-gradient(
+    90deg,
+    #ffff33 0%, /* Neon Yellow */
+    #ff9900 100% /* Bright Orange */
+  );
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  color: #0d0d0d; /* Dark text for contrast */
+  box-shadow: 0 0 15px rgba(255, 255, 51, 0.5);
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 0 25px #ff9900;
+}
+
+.btn-outline {
+  border: 2px solid #ff9900; /* Orange outline */
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #ffff33; /* Neon Yellow text */
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: #ff9900; /* Orange fill on hover */
+  color: #0d0d0d;
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+}
+
+/* ==== RIGHT SIDE CIRCULAR IMAGE ==== */
+.home-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 350px;
+  height: 350px;
+  /* Use the Neon Yellow as the border/glow color */
+  background: #ffff33; 
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 0 30px #ffff33, 0 0 60px rgba(255, 255, 51, 0.3); /* Neon glow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
